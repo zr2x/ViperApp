@@ -21,6 +21,8 @@
 		C071E22F2B00B2F9007BE6BF /* MainViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E22E2B00B2F9007BE6BF /* MainViewInput.swift */; };
 		C071E2312B00B312007BE6BF /* MainViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E2302B00B312007BE6BF /* MainViewOutput.swift */; };
 		C071E2332B00B46D007BE6BF /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E2322B00B46D007BE6BF /* MainRouter.swift */; };
+		C071E2362B00B5EB007BE6BF /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E2352B00B5EB007BE6BF /* MainInteractor.swift */; };
+		C071E2382B00BBF1007BE6BF /* MainInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E2372B00BBF1007BE6BF /* MainInteractorInput.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		C071E22E2B00B2F9007BE6BF /* MainViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewInput.swift; sourceTree = "<group>"; };
 		C071E2302B00B312007BE6BF /* MainViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewOutput.swift; sourceTree = "<group>"; };
 		C071E2322B00B46D007BE6BF /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		C071E2352B00B5EB007BE6BF /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		C071E2372B00BBF1007BE6BF /* MainInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractorInput.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +145,8 @@
 		C071E21C2B00A3AD007BE6BF /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				C071E2352B00B5EB007BE6BF /* MainInteractor.swift */,
+				C071E2372B00BBF1007BE6BF /* MainInteractorInput.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -250,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C071E2032B00A35E007BE6BF /* AppDelegate.swift in Sources */,
+				C071E2382B00BBF1007BE6BF /* MainInteractorInput.swift in Sources */,
 				C071E22B2B00ADA4007BE6BF /* CharacterStatus.swift in Sources */,
 				C071E2052B00A35E007BE6BF /* SceneDelegate.swift in Sources */,
 				C071E2312B00B312007BE6BF /* MainViewOutput.swift in Sources */,
@@ -261,6 +268,7 @@
 				C071E2292B00AD88007BE6BF /* CharacterModel.swift in Sources */,
 				C071E22D2B00ADB6007BE6BF /* CharacterGender.swift in Sources */,
 				C071E2202B00A6BE007BE6BF /* MainViewController.swift in Sources */,
+				C071E2362B00B5EB007BE6BF /* MainInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
