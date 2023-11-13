@@ -16,6 +16,6 @@ protocol MainModuleRouter {
 class MainRouter: MainModuleRouter {
     
     func openDetailVC() {
-        let
+
     }
 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainTableViewCell: UITableViewCell {
+class MainPageTableViewCell: UITableViewCell {
 
     static let identifire = "MainTableViewCell"
     
@@ -56,12 +56,38 @@ class MainTableViewCell: UITableViewCell {
     }
     
     private func setupViews() {
+        avatarImageView.translatesAutoresizingMaskIntoConstraints = false
+        contentView.addSubview(avatarImageView)
+        
+        nameLabel.translatesAutoresizingMaskIntoConstraints = false
+        contentView.addSubview(nameLabel)
+        
+        statusLabel.translatesAutoresizingMaskIntoConstraints = false
+        contentView.addSubview(statusLabel)
+        
+        favouriteButton.translatesAutoresizingMaskIntoConstraints = false
+        contentView.addSubview(favouriteButton)
         
         setupConstraints()
     }
     
     
     private func setupConstraints() {
+        NSLayoutConstraint.activate([
+            avatarImageView.topAnchor.constraint(equalTo: contentView.topAnchor),
+            avatarImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            avatarImageView.widthAnchor.constraint(equalToConstant: 150),
+            avatarImageView.heightAnchor.constraint(equalToConstant: 150)
+                                    ])
+        
+        NSLayoutConstraint.activate([
+            nameLabel.topAnchor.constraint(equalTo: <#T##NSLayoutAnchor<NSLayoutYAxisAnchor>#>)
+        ])
+        NSLayoutConstraint.activate([
+        ])
+        NSLayoutConstraint.activate([
+        ])
+        
         
     }
     

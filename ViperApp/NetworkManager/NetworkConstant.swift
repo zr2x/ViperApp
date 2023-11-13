@@ -30,5 +30,9 @@ final class NetworkConstant {
             "character"
         }
     }
+    
+    static func makeCharacterUrl() -> URL? {
+        return URL(string: serverAddress + apiKey + character)
+    }
 }
 

@@ -7,16 +7,22 @@
 
 import UIKit
 
+protocol MainPageViewInput {
+    var output: MainPageViewOutput? { get set }
+}
 
+protocol MainPageViewOutput {
+    
+}
 
-class MainViewController: UIViewController {
+class MainPageViewController: UIViewController {
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(MainTableViewCell.self
-                           , forCellReuseIdentifier: MainTableViewCell.identifire)
+        tableView.register(MainPageTableViewCell.self
+                           , forCellReuseIdentifier: MainPageTableViewCell.identifire)
         return tableView
     }()
 
@@ -49,7 +55,7 @@ class MainViewController: UIViewController {
 
 //MARK: DataSource + Delegate
 
-extension MainViewController: UITableViewDelegate, UITableViewDataSource {
+extension MainPageViewController: UITableViewDelegate, UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -57,7 +63,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: MainTableViewCell.identifire, for: indexPath) as? MainTableViewCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: MainPageTableViewCell.identifire, for: indexPath) as? MainPageTableViewCell else { return UITableViewCell() }
         cell.textLabel?.text = "SOME"
         return cell
     }

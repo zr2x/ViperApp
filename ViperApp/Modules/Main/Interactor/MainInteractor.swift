@@ -6,3 +6,16 @@
 //
 
 import Foundation
+
+protocol MainPageInteractorInput {
+    
+}
+
+protocol MainPageInteractorOutput {
+    
+}
+
+
+class MainPageInteractor {
+    
+}

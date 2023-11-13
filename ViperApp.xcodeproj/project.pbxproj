@@ -11,18 +11,16 @@
 		C071E2052B00A35E007BE6BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E2042B00A35E007BE6BF /* SceneDelegate.swift */; };
 		C071E20C2B00A35F007BE6BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C071E20B2B00A35F007BE6BF /* Assets.xcassets */; };
 		C071E20F2B00A35F007BE6BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C071E20D2B00A35F007BE6BF /* LaunchScreen.storyboard */; };
-		C071E2202B00A6BE007BE6BF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E21F2B00A6BE007BE6BF /* MainViewController.swift */; };
-		C071E2222B00A781007BE6BF /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E2212B00A781007BE6BF /* MainTableViewCell.swift */; };
+		C071E2202B00A6BE007BE6BF /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E21F2B00A6BE007BE6BF /* MainPageViewController.swift */; };
+		C071E2222B00A781007BE6BF /* MainPageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E2212B00A781007BE6BF /* MainPageTableViewCell.swift */; };
 		C071E2252B00ACA1007BE6BF /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E2242B00ACA1007BE6BF /* NetworkConstant.swift */; };
 		C071E2272B00ACB6007BE6BF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E2262B00ACB6007BE6BF /* NetworkService.swift */; };
 		C071E2292B00AD88007BE6BF /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E2282B00AD88007BE6BF /* CharacterModel.swift */; };
 		C071E22B2B00ADA4007BE6BF /* CharacterStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E22A2B00ADA4007BE6BF /* CharacterStatus.swift */; };
 		C071E22D2B00ADB6007BE6BF /* CharacterGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E22C2B00ADB6007BE6BF /* CharacterGender.swift */; };
-		C071E22F2B00B2F9007BE6BF /* MainViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E22E2B00B2F9007BE6BF /* MainViewInput.swift */; };
-		C071E2312B00B312007BE6BF /* MainViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E2302B00B312007BE6BF /* MainViewOutput.swift */; };
 		C071E2332B00B46D007BE6BF /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E2322B00B46D007BE6BF /* MainRouter.swift */; };
 		C071E2362B00B5EB007BE6BF /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E2352B00B5EB007BE6BF /* MainInteractor.swift */; };
-		C071E2382B00BBF1007BE6BF /* MainInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E2372B00BBF1007BE6BF /* MainInteractorInput.swift */; };
+		C071E23A2B0250E1007BE6BF /* MainPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E2392B0250E1007BE6BF /* MainPagePresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,18 +30,16 @@
 		C071E20B2B00A35F007BE6BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C071E20E2B00A35F007BE6BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C071E2102B00A35F007BE6BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C071E21F2B00A6BE007BE6BF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		C071E2212B00A781007BE6BF /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		C071E21F2B00A6BE007BE6BF /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
+		C071E2212B00A781007BE6BF /* MainPageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageTableViewCell.swift; sourceTree = "<group>"; };
 		C071E2242B00ACA1007BE6BF /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
 		C071E2262B00ACB6007BE6BF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		C071E2282B00AD88007BE6BF /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
 		C071E22A2B00ADA4007BE6BF /* CharacterStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterStatus.swift; sourceTree = "<group>"; };
 		C071E22C2B00ADB6007BE6BF /* CharacterGender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGender.swift; sourceTree = "<group>"; };
-		C071E22E2B00B2F9007BE6BF /* MainViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewInput.swift; sourceTree = "<group>"; };
-		C071E2302B00B312007BE6BF /* MainViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewOutput.swift; sourceTree = "<group>"; };
 		C071E2322B00B46D007BE6BF /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
 		C071E2352B00B5EB007BE6BF /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
-		C071E2372B00BBF1007BE6BF /* MainInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractorInput.swift; sourceTree = "<group>"; };
+		C071E2392B0250E1007BE6BF /* MainPagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPagePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,10 +123,8 @@
 		C071E21A2B00A39E007BE6BF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C071E21F2B00A6BE007BE6BF /* MainViewController.swift */,
-				C071E2212B00A781007BE6BF /* MainTableViewCell.swift */,
-				C071E22E2B00B2F9007BE6BF /* MainViewInput.swift */,
-				C071E2302B00B312007BE6BF /* MainViewOutput.swift */,
+				C071E21F2B00A6BE007BE6BF /* MainPageViewController.swift */,
+				C071E2212B00A781007BE6BF /* MainPageTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -138,6 +132,7 @@
 		C071E21B2B00A3A5007BE6BF /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				C071E2392B0250E1007BE6BF /* MainPagePresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -146,7 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				C071E2352B00B5EB007BE6BF /* MainInteractor.swift */,
-				C071E2372B00BBF1007BE6BF /* MainInteractorInput.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -255,19 +249,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C071E23A2B0250E1007BE6BF /* MainPagePresenter.swift in Sources */,
 				C071E2032B00A35E007BE6BF /* AppDelegate.swift in Sources */,
-				C071E2382B00BBF1007BE6BF /* MainInteractorInput.swift in Sources */,
 				C071E22B2B00ADA4007BE6BF /* CharacterStatus.swift in Sources */,
 				C071E2052B00A35E007BE6BF /* SceneDelegate.swift in Sources */,
-				C071E2312B00B312007BE6BF /* MainViewOutput.swift in Sources */,
-				C071E2222B00A781007BE6BF /* MainTableViewCell.swift in Sources */,
+				C071E2222B00A781007BE6BF /* MainPageTableViewCell.swift in Sources */,
 				C071E2332B00B46D007BE6BF /* MainRouter.swift in Sources */,
 				C071E2252B00ACA1007BE6BF /* NetworkConstant.swift in Sources */,
 				C071E2272B00ACB6007BE6BF /* NetworkService.swift in Sources */,
-				C071E22F2B00B2F9007BE6BF /* MainViewInput.swift in Sources */,
 				C071E2292B00AD88007BE6BF /* CharacterModel.swift in Sources */,
 				C071E22D2B00ADB6007BE6BF /* CharacterGender.swift in Sources */,
-				C071E2202B00A6BE007BE6BF /* MainViewController.swift in Sources */,
+				C071E2202B00A6BE007BE6BF /* MainPageViewController.swift in Sources */,
 				C071E2362B00B5EB007BE6BF /* MainInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
