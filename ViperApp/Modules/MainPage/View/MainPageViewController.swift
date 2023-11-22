@@ -26,6 +26,8 @@ class MainPageViewController: UIViewController {
         return tableView
     }()
 
+    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -53,7 +55,7 @@ class MainPageViewController: UIViewController {
 }
 
 
-//MARK: DataSource + Delegate
+// MARK: DataSource + Delegate
 
 extension MainPageViewController: UITableViewDelegate, UITableViewDataSource {
     

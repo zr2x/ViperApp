@@ -7,8 +7,7 @@
 
 import Foundation
 
-protocol MainModuleRouter {
-    
+protocol MainModuleRouter { 
     func openDetailVC()
 }
 

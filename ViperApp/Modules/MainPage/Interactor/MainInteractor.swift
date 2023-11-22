@@ -16,6 +16,7 @@ protocol MainPageInteractorOutput {
 }
 
 
-class MainPageInteractor {
+
+class MainPageInteractor: MainPageInteractorInput {
     
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C02A6FE12B0E15070053FFDD /* FavouriteDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02A6FE02B0E15070053FFDD /* FavouriteDataBase.swift */; };
+		C02A6FE82B0E18E00053FFDD /* DetailCharacterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02A6FE72B0E18E00053FFDD /* DetailCharacterViewController.swift */; };
 		C071E2032B00A35E007BE6BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E2022B00A35E007BE6BF /* AppDelegate.swift */; };
 		C071E2052B00A35E007BE6BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E2042B00A35E007BE6BF /* SceneDelegate.swift */; };
 		C071E20C2B00A35F007BE6BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C071E20B2B00A35F007BE6BF /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C02A6FE02B0E15070053FFDD /* FavouriteDataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteDataBase.swift; sourceTree = "<group>"; };
+		C02A6FE72B0E18E00053FFDD /* DetailCharacterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCharacterViewController.swift; sourceTree = "<group>"; };
 		C071E1FF2B00A35E007BE6BF /* ViperApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C071E2022B00A35E007BE6BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C071E2042B00A35E007BE6BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +57,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C02A6FDE2B0E14A60053FFDD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C02A6FDF2B0E14CC0053FFDD /* FavouriteDB */,
+				C071E2232B00AC85007BE6BF /* NetworkManager */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C02A6FDF2B0E14CC0053FFDD /* FavouriteDB */ = {
+			isa = PBXGroup;
+			children = (
+				C02A6FE02B0E15070053FFDD /* FavouriteDataBase.swift */,
+			);
+			path = FavouriteDB;
+			sourceTree = "<group>";
+		};
+		C02A6FE22B0E18920053FFDD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C02A6FE72B0E18E00053FFDD /* DetailCharacterViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C02A6FE32B0E189B0053FFDD /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		C02A6FE42B0E18A20053FFDD /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		C02A6FE52B0E18A90053FFDD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		C02A6FE62B0E18AF0053FFDD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		C071E1F62B00A35E007BE6BF = {
 			isa = PBXGroup;
 			children = (
@@ -74,7 +131,7 @@
 			children = (
 				C071E2162B00A36B007BE6BF /* App */,
 				C071E2182B00A387007BE6BF /* Modules */,
-				C071E2232B00AC85007BE6BF /* NetworkManager */,
+				C02A6FDE2B0E14A60053FFDD /* Services */,
 				C071E2172B00A37E007BE6BF /* Resources */,
 			);
 			path = ViperApp;
@@ -102,22 +159,22 @@
 		C071E2182B00A387007BE6BF /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				C071E2192B00A397007BE6BF /* Main */,
-				C071E2342B00B4BC007BE6BF /* Detail */,
+				C071E2192B00A397007BE6BF /* MainPage */,
+				C071E2342B00B4BC007BE6BF /* DetailCharacter */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		C071E2192B00A397007BE6BF /* Main */ = {
+		C071E2192B00A397007BE6BF /* MainPage */ = {
 			isa = PBXGroup;
 			children = (
 				C071E21A2B00A39E007BE6BF /* View */,
 				C071E21C2B00A3AD007BE6BF /* Interactor */,
 				C071E21B2B00A3A5007BE6BF /* Presenter */,
-				C071E21E2B00A3B7007BE6BF /* Model */,
+				C071E21E2B00A3B7007BE6BF /* Entity */,
 				C071E21D2B00A3B3007BE6BF /* Router */,
 			);
-			path = Main;
+			path = MainPage;
 			sourceTree = "<group>";
 		};
 		C071E21A2B00A39E007BE6BF /* View */ = {
@@ -153,14 +210,14 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
-		C071E21E2B00A3B7007BE6BF /* Model */ = {
+		C071E21E2B00A3B7007BE6BF /* Entity */ = {
 			isa = PBXGroup;
 			children = (
 				C071E2282B00AD88007BE6BF /* CharacterModel.swift */,
 				C071E22A2B00ADA4007BE6BF /* CharacterStatus.swift */,
 				C071E22C2B00ADB6007BE6BF /* CharacterGender.swift */,
 			);
-			path = Model;
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		C071E2232B00AC85007BE6BF /* NetworkManager */ = {
@@ -172,11 +229,16 @@
 			path = NetworkManager;
 			sourceTree = "<group>";
 		};
-		C071E2342B00B4BC007BE6BF /* Detail */ = {
+		C071E2342B00B4BC007BE6BF /* DetailCharacter */ = {
 			isa = PBXGroup;
 			children = (
+				C02A6FE22B0E18920053FFDD /* View */,
+				C02A6FE52B0E18A90053FFDD /* Presenter */,
+				C02A6FE32B0E189B0053FFDD /* Interactor */,
+				C02A6FE62B0E18AF0053FFDD /* Router */,
+				C02A6FE42B0E18A20053FFDD /* Entity */,
 			);
-			path = Detail;
+			path = DetailCharacter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +316,7 @@
 				C071E22B2B00ADA4007BE6BF /* CharacterStatus.swift in Sources */,
 				C071E2052B00A35E007BE6BF /* SceneDelegate.swift in Sources */,
 				C071E2222B00A781007BE6BF /* MainPageTableViewCell.swift in Sources */,
+				C02A6FE82B0E18E00053FFDD /* DetailCharacterViewController.swift in Sources */,
 				C071E2332B00B46D007BE6BF /* MainRouter.swift in Sources */,
 				C071E2252B00ACA1007BE6BF /* NetworkConstant.swift in Sources */,
 				C071E2272B00ACB6007BE6BF /* NetworkService.swift in Sources */,
@@ -261,6 +324,7 @@
 				C071E22D2B00ADB6007BE6BF /* CharacterGender.swift in Sources */,
 				C071E2202B00A6BE007BE6BF /* MainPageViewController.swift in Sources */,
 				C071E2362B00B5EB007BE6BF /* MainInteractor.swift in Sources */,
+				C02A6FE12B0E15070053FFDD /* FavouriteDataBase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
