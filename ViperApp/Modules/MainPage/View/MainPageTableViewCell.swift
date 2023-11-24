@@ -55,6 +55,7 @@ class MainPageTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    // MARK: Setup views
     private func setupViews() {
         avatarImageView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(avatarImageView)
@@ -71,7 +72,7 @@ class MainPageTableViewCell: UITableViewCell {
         setupConstraints()
     }
     
-    
+    // MARK: Setup constraints
     private func setupConstraints() {
         guard let superview else { return }
         NSLayoutConstraint.activate([

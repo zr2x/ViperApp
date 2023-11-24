@@ -7,35 +7,52 @@
 
 import UIKit
 
-protocol MainPageViewInput {
-    var output: MainPageViewOutput? { get set }
+protocol MainPageViewInput: AnyObject {
+    func showIndicator()
+    func hideIndicator()
+    func reloadTable()
 }
 
 protocol MainPageViewOutput {
-    
+    var dataSouce: [CharacterModel] { get set }
+    func obtainCharacters()
 }
 
 class MainPageViewController: UIViewController {
+    
+    var presenter: MainPageViewOutput!
+    private let refreshControl = UIRefreshControl()
+    private let activityIndicator = UIActivityIndicatorView()
     
     private lazy var tableView: UITableView = {
         let tableView = UITableView(frame: .zero)
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.estimatedRowHeight = 0
+        tableView.addSubview(refreshControl)
+        tableView.addSubview(activityIndicator)
         tableView.register(MainPageTableViewCell.self
                            , forCellReuseIdentifier: MainPageTableViewCell.identifire)
         return tableView
     }()
-
+    
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .white
+        
         setupViews()
         setupConstraints()
     }
     
+    // MARK: Setup views
+    private func setupViews() {
+        view.addSubview(tableView)
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+    }
+    
+    
+    // MARK: Setup constraints
     private func setupConstraints() {
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
@@ -45,23 +62,16 @@ class MainPageViewController: UIViewController {
         ])
     }
     
-    private func setupViews() {
-        view.addSubview(tableView)
-        tableView.translatesAutoresizingMaskIntoConstraints = false
+    @objc private func refreshOption(_ sender: Any) {
+        presenter.obtainCharacters()
     }
     
-
-
 }
-
-
 // MARK: DataSource + Delegate
 
 extension MainPageViewController: UITableViewDelegate, UITableViewDataSource {
-    
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        6
+        presenter.dataSource.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -69,6 +79,21 @@ extension MainPageViewController: UITableViewDelegate, UITableViewDataSource {
         cell.textLabel?.text = "SOME"
         return cell
     }
+}
+
+extension MainPageViewController: MainPageViewInput {
+    func showIndicator() {
+        self.activityIndicator.startAnimating()
+        self.activityIndicator.isHidden = false
+    }
     
+    func hideIndicator() {
+        self.activityIndicator.stopAnimating()
+        self.activityIndicator.isHidden = true
+    }
     
+    func reloadTable() {
+        refreshControl.endRefreshing()
+        tableView.reloadData()
+    }
 }

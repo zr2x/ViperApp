@@ -20,7 +20,7 @@
 		C071E2292B00AD88007BE6BF /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E2282B00AD88007BE6BF /* CharacterModel.swift */; };
 		C071E22B2B00ADA4007BE6BF /* CharacterStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E22A2B00ADA4007BE6BF /* CharacterStatus.swift */; };
 		C071E22D2B00ADB6007BE6BF /* CharacterGender.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E22C2B00ADB6007BE6BF /* CharacterGender.swift */; };
-		C071E2332B00B46D007BE6BF /* MainRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E2322B00B46D007BE6BF /* MainRouter.swift */; };
+		C071E2332B00B46D007BE6BF /* MainPageRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E2322B00B46D007BE6BF /* MainPageRouter.swift */; };
 		C071E2362B00B5EB007BE6BF /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E2352B00B5EB007BE6BF /* MainInteractor.swift */; };
 		C071E23A2B0250E1007BE6BF /* MainPagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C071E2392B0250E1007BE6BF /* MainPagePresenter.swift */; };
 /* End PBXBuildFile section */
@@ -41,7 +41,7 @@
 		C071E2282B00AD88007BE6BF /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
 		C071E22A2B00ADA4007BE6BF /* CharacterStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterStatus.swift; sourceTree = "<group>"; };
 		C071E22C2B00ADB6007BE6BF /* CharacterGender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterGender.swift; sourceTree = "<group>"; };
-		C071E2322B00B46D007BE6BF /* MainRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainRouter.swift; sourceTree = "<group>"; };
+		C071E2322B00B46D007BE6BF /* MainPageRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageRouter.swift; sourceTree = "<group>"; };
 		C071E2352B00B5EB007BE6BF /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		C071E2392B0250E1007BE6BF /* MainPagePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPagePresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -205,7 +205,7 @@
 		C071E21D2B00A3B3007BE6BF /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				C071E2322B00B46D007BE6BF /* MainRouter.swift */,
+				C071E2322B00B46D007BE6BF /* MainPageRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -317,7 +317,7 @@
 				C071E2052B00A35E007BE6BF /* SceneDelegate.swift in Sources */,
 				C071E2222B00A781007BE6BF /* MainPageTableViewCell.swift in Sources */,
 				C02A6FE82B0E18E00053FFDD /* DetailCharacterViewController.swift in Sources */,
-				C071E2332B00B46D007BE6BF /* MainRouter.swift in Sources */,
+				C071E2332B00B46D007BE6BF /* MainPageRouter.swift in Sources */,
 				C071E2252B00ACA1007BE6BF /* NetworkConstant.swift in Sources */,
 				C071E2272B00ACB6007BE6BF /* NetworkService.swift in Sources */,
 				C071E2292B00AD88007BE6BF /* CharacterModel.swift in Sources */,

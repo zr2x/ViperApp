@@ -15,14 +15,14 @@ protocol NetworkServiceProtocol {
     associatedtype ResponseType: Decodable
     associatedtype ErrorType: Error
     
-    static func getCharacter<ResponseApi: Decodable>(for type: ResponseApi.Type, completion: @escaping (Result<ResponseApi, ErrorType>) -> Void )
+    func getCharacter<ResponseApi: Decodable>(for type: ResponseApi.Type, completion: @escaping (Result<ResponseApi, ErrorType>) -> Void )
 }
 
 public class NetworkService: NetworkServiceProtocol {
     typealias ResponseType = AllCharactersModel
     typealias ErrorType = NetworkError
     
-    static func getCharacter<ResponseApi: Decodable>(for type: ResponseApi.Type, completion: @escaping (Result<ResponseApi, ErrorType>) -> Void ) {
+    func getCharacter<ResponseApi: Decodable>(for type: ResponseApi.Type, completion: @escaping (Result<ResponseApi, ErrorType>) -> Void ) {
         guard let url = NetworkConstant.makeCharacterUrl() else {
             completion(.failure(NetworkError.badUrl))
             return }
