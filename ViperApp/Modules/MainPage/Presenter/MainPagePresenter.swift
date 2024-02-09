@@ -5,6 +5,8 @@
 //  Created by Искандер Ситдиков on 13.11.2023.
 //
 
+//some test
+
 import Foundation
 
 protocol MainPagePresenterInput {
